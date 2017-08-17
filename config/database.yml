@@ -9,8 +9,8 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
-default: &default
-  adapter: mysql2
+default: &default #設定を default という名前で共通化する
+  adapter: mysql2 #mysql2 に接続することを明示
   encoding: utf8
   pool: 5
   username: root
